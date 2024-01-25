@@ -43,8 +43,8 @@
 .text-clr {
   color: #a2a4a9;
 }
-/* Media Quries */
 
+/* Media Quries */
 @media (max-width: 556px) {
   .form {
     position: relative;
@@ -92,6 +92,7 @@
     height: 45px;
   }
 }
+
 @media (min-width: 800px) {
   .login-container {
     width: 90% !important;
@@ -104,34 +105,9 @@
   .heading-login {
     font-size: 2.5rem;
   }
-  /* .form {
-    position: relative;
-    left: 160px;
-  } */
   .login-btn {
     width: 490px !important;
     height: 45px;
   }
 
 }
-/* @media (min-width: 779px) and (max-width: 1281px) {
-  .login-btn {
-    width: 490px !important;
-    height: 45px;
-  }
-  .form {
-    position: relative;
-    left: 185px !important;
-  }
-  .form-div {
-    width: 50px !important;
-  }
-  .input-fields {
-    width: 490px !important;
-    height: 45px !important;
-    border-radius: 4px !important;
-  }
-  .login-container {
-    width: 70% !important;
-  }
-} */

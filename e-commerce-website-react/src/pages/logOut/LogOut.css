@@ -1,0 +1,19 @@
+.heading-main{
+    color: #F4C876;
+    font-size: 3rem;
+
+}
+.btn-log0ut{
+    background-color: #EDA620;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+.btn-home{
+    background-color: #000;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #EDA620;
+    color: #EDA620;
+}

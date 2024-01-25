@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router";
 import { selectUser } from "../../redux/user";
+import "../logOut/LogOut.css";
 import { useSelector } from "react-redux";
 
 function LogOut() {
@@ -8,12 +9,14 @@ function LogOut() {
   const user = useSelector(selectUser);
 
   return (
-    <div>
-      <h3 className="text-white">
-        We are sad to see you go <span>{user.name}</span>
-      </h3>
+    <div className="container d-flex flex-column mt-5 pt-5 align-items-center">
+      <h1 className="heading-main mb-2">Logged Out</h1>
+      <h2 className="text-white mb-3 text-center">
+        We are sad to see you go <span className="text-center">{user.name}</span>
+      </h2>
       <button
         type="button"
+        className="btn-log0ut btn mb-2"
         onClick={() => {
           navigate("/login");
         }}
@@ -21,6 +24,7 @@ function LogOut() {
         Login
       </button>
       <button
+      className="btn-home btn"
         type="button"
         onClick={() => {
           navigate("/");
