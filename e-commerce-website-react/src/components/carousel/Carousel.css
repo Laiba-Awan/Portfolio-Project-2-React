@@ -1,0 +1,36 @@
+.slider-img {
+  width: 100% !important;
+  min-height: 100%!important;
+  background-image: url(../../../public/assets/Hero\ Section.png);
+  background-size: cover;
+  display: block !important;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.container-carousel {
+  height: 500px;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.049);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid #d6cfcf;
+  border-radius: 10px;
+}
+.heading-hp{
+    font-size: 4rem;
+    text-wrap: nowrap;
+}
+.btn-slider{
+    background-color: #F7D99C !important;
+    color: #595755  !important;
+    border-radius: 5px;
+    height: 40px !important;
+}
+.btn-carousel{
+    background-color: #EDA620 !important;
+    color: #fff !important;
+    border-radius: 5px;
+    height: 40px !important;
+    width: 200px;
+}

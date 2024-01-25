@@ -1,0 +1,17 @@
+.bg-logos {
+  background-color: #F7D89C;
+}
+.icons {
+  height: 105px;
+
+}
+@media (max-width: 556px) {
+  .icons {
+    height: 45px;
+  }
+}
+@media (min-width: 556px) and (max-width: 769px) {
+  .icons {
+    height: 90px;
+  }
+}

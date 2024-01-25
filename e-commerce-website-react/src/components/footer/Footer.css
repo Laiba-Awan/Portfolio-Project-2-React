@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap");
+.bg-footer {
+  background-color: #121212;
+  font-family: "Itim", cursive;
+}
+.form-colors{
+  color: #9b9c9e;
+}
+.footer-childs {
+  color: #9b9c9e;
+  list-style: none;
+}
+.footer-childs:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hr {
+  border: 2px solid white;
+}
+
+/* .form-control:placeholder{
+    background-color: #01161e !important;
+    color: #fff !important;
+} */
+.form-control:focus {
+  box-shadow: 0px 0px 10px 0px white !important;
+  border: none;
+}
+.btn-primary {
+  background-color: #fff !important;
+  color: #605555 !important;
+  border: none !important;
+}
+.btn-primary:focus {
+  box-shadow: 0px 0px 10px 0px white !important;
+  border: none;
+}
+.footer-icons {
+  font-size: 1.3rem;
+  margin: 0px 6px;
+  color: #9b9c9e;
+}
+.footer-icons:hover {
+  color: #fff;
+}
