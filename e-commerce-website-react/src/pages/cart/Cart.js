@@ -21,10 +21,9 @@ import {
 // import { useParams } from "react-router";
 
 function Cart() {
-  const [quantity, setQuantity] = useState(1);
   const { cart, user } = useSelector((state) => state);
   const [modalOpen, setModalOpen] = useState(false);
-  const [TotalPrice, SetTotalPrice] = useState(0);
+  // const [TotalPrice, SetTotalPrice] = useState(0);
   // const { id } = useParams();
   const dispatch = useDispatch();
 
@@ -36,22 +35,22 @@ function Cart() {
     return price;
   };
 
-  const handleTotalPrice = () => {
-    let TotalPrice = 0;
-    cart.map((item) => {
-      return (TotalPrice += quantity * item.price);
-    });
-    SetTotalPrice(TotalPrice);
-  };
+  // const handleTotalPrice = () => {
+  //   let TotalPrice = 0;
+  //   cart.map((item) => {
+  //     return (TotalPrice += quantity * item.price);
+  //   });
+  //   SetTotalPrice(TotalPrice);
+  // };
 
-  useEffect(() => {
-    handleTotalPrice();
-  });
+  // useEffect(() => {
+  //   handleTotalPrice();
+  // });
 
   const handleDlt = (item) => {
     dispatch(removeFromCart(item.id));
   };
-  
+
   const handleEmpty = () => {
     if (cart.length > 0) {
       dispatch(emptyCart());
@@ -60,6 +59,8 @@ function Cart() {
       toast.error("Cart is already Empty!");
     }
   };
+
+
 
   return (
     <>
@@ -162,25 +163,15 @@ function Cart() {
                   >
                     <h5 className="heading-t-br">Product</h5>{" "}
                   </Col>
-                  <Col lg="2" xs="1" className="pt-3 pb-2 col2-cart-sm">
+                  <Col lg="3" xs="1" className="pt-3 pb-2 col2-cart-sm">
                     <h5 className="heading-t-br">Price</h5>
-                  </Col>
-                  <Col lg="2" xs="1" className="pt-3 pb-2 col3-cart-sm">
-                    <h5 className="heading-t-br">Quantity</h5>
-                  </Col>
-                  <Col
-                    lg="2"
-                    xs="1"
-                    className="d-flex justify-content-end pt-3 pt-lg-3 pb-lg-2 col4-cart-sm"
-                  >
-                    <h5 className="heading-t-br">Sub Total</h5>
                   </Col>
                 </Row>
                 {cart.map((item) => (
                   <Row
                     key={item.id}
                     className="d-flex col-br flex-row align-items-center justify-content-center"
-                  >
+                    >
                     <Col
                       className="d-flex flex-lg-row  flex-column my-2 align-items-lg-center"
                       lg="6"
@@ -194,30 +185,12 @@ function Cart() {
                         {item.name}
                       </h5>
                     </Col>
-                    <Col lg="2">
+                    <Col lg="3" className="d-flex justify-content-end">
                       <h5 className="mb-2 item-price" tag="h6">
-                        {/* Rs {CalculateTotal(item)} */}
+                        Rs {item.price}
                       </h5>
                     </Col>
-                    <Col lg="2">
-                      <Button
-                        className="btn-dec text-white"
-                        onClick={() => {
-                          if (quantity > 1) setQuantity(quantity - 1);
-                        }}
-                      >
-                        -
-                      </Button>
-                      <Button className="btn-dec text-white">{quantity}</Button>
-                      <Button
-                        className="btn-dec text-white"
-                        onClick={() => setQuantity(quantity + 1)}
-                      >
-                        +
-                      </Button>
-                    </Col>
-                    <Col></Col>
-                    <Col>
+                    <Col className="d-flex justify-content-center" lg="2">
                       <TiDelete
                         className="dlt-btn"
                         onClick={() => handleDlt(item)}
@@ -255,9 +228,6 @@ function Cart() {
                 <p>
                   Taxes, shipping and discounts codes calculated at checkout
                 </p>
-                <div className="total-price-cart">
-                  <h4>{TotalPrice}</h4>
-                </div>
                 <Button
                   className="btns-cart me-2 ms-4"
                   onClick={() => setModalOpen(true)}
