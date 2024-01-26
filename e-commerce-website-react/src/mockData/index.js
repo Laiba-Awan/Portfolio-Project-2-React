@@ -510,6 +510,6 @@ export const ReviewsData = [
   {
     id: "Rv-1",
     name: "Benedict",
-    text: "“You made my life just heaven, I had severe acne from past two years and nothing worked before but your skin Care product just did magic, Thank you So much!”",
+    text: "“You made my life just heaven, I had severe acne from past two years and nothing worked before but your skin Care product did magic, Thank you So much!”",
   },
 ];
