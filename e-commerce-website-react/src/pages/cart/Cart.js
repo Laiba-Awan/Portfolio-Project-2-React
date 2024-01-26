@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { emptyCart, removeFromCart } from "../../redux/cart";
+import { useNavigate } from "react-router";
 import { Button } from "react-scroll";
 import "../cart/cart.css";
 import { useState } from "react";
@@ -18,7 +19,6 @@ import {
   FormGroup,
   Label,
 } from "reactstrap";
-import { Link, useNavigate } from "react-router-dom";
 
 function Cart() {
   const { cart } = useSelector((state) => state);

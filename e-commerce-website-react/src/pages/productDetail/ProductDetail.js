@@ -56,7 +56,7 @@ function ProductDetail() {
                   />
                 </Col>
               </Row>
-              <Row className="d-flex justify-content-lg-start justify-content-center">
+              <Row className="d-flex justify-content-lg-start justify-content-center ms-lg-1">
                 {product.images &&
                   product.images.map((item, index) => {
                     return (
@@ -86,9 +86,7 @@ function ProductDetail() {
               <div className="stars">
                <StarRating stars={product.rating} />
               </div>
-
               <h2 className="product-title mt-3">{product.name}</h2>
-
               <h5 className="mb-2 mt-2 text-white" tag="h6">
                 Rs {product.price}
               </h5>
