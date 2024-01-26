@@ -94,8 +94,13 @@
 .navbar-brand {
   transition: 0.3s ease-in-out;
 }
-/* Media Queries */
+.cart-size{
+  font-size: 1rem;
+  color: #f4c876;
+}
 
+
+/* Media Queries */
 @media (min-width: 992px) {
   .nav-line::before {
     content: "";

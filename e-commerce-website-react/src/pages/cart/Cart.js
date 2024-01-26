@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { emptyCart, removeFromCart } from "../../redux/cart";
 import { Button } from "react-scroll";
 import "../cart/cart.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TiDelete } from "react-icons/ti";
 import Footer from "../../components/footer/Footer";
 import { toast } from "react-toastify";
@@ -18,25 +18,40 @@ import {
   FormGroup,
   Label,
 } from "reactstrap";
+// import { useParams } from "react-router";
 
 function Cart() {
   const [quantity, setQuantity] = useState(1);
   const { cart, user } = useSelector((state) => state);
   const [modalOpen, setModalOpen] = useState(false);
+  const [TotalPrice, SetTotalPrice] = useState(0);
   // const { id } = useParams();
   const dispatch = useDispatch();
 
   const getTotal = () => {
     let price = 0;
     cart.map((item) => {
-      price += item.price;
+      return (price += item.price);
     });
     return price;
   };
 
+  const handleTotalPrice = () => {
+    let TotalPrice = 0;
+    cart.map((item) => {
+      return (TotalPrice += quantity * item.price);
+    });
+    SetTotalPrice(TotalPrice);
+  };
+
+  useEffect(() => {
+    handleTotalPrice();
+  });
+
   const handleDlt = (item) => {
     dispatch(removeFromCart(item.id));
   };
+  
   const handleEmpty = () => {
     if (cart.length > 0) {
       dispatch(emptyCart());
@@ -45,6 +60,7 @@ function Cart() {
       toast.error("Cart is already Empty!");
     }
   };
+
   return (
     <>
       <Container fluid className="bg-cart text-white mb-5">
@@ -57,18 +73,22 @@ function Cart() {
           </ModalHeader>
           <ModalBody className="modal-bg">
             <FormGroup>
-              <Label for="exampleAddress" className="text-white">Address</Label>
+              <Label for="exampleAddress" className="text-white">
+                Address
+              </Label>
               <Input
-              className="modal-bg"
+                className="modal-bg"
                 id="exampleAddress"
                 name="address"
                 placeholder="1234 Main St"
               />
             </FormGroup>
             <FormGroup>
-              <Label for="exampleAddress2" className="text-white">Address 2</Label>
+              <Label for="exampleAddress2" className="text-white">
+                Address 2
+              </Label>
               <Input
-              className="modal-bg"
+                className="modal-bg"
                 id="exampleAddress2"
                 name="address2"
                 placeholder="Apartment, studio, or floor"
@@ -77,25 +97,36 @@ function Cart() {
             <Row>
               <Col md={6}>
                 <FormGroup>
-                  <Label for="exampleCity" className="text-white">City</Label>
-                  <Input id="exampleCity" name="city" className="modal-bg"/>
+                  <Label for="exampleCity" className="text-white">
+                    City
+                  </Label>
+                  <Input id="exampleCity" name="city" className="modal-bg" />
                 </FormGroup>
               </Col>
               <Col md={4}>
                 <FormGroup>
-                  <Label for="exampleState" className="text-white">State</Label>
-                  <Input id="exampleState" name="state" className="modal-bg"/>
+                  <Label for="exampleState" className="text-white">
+                    State
+                  </Label>
+                  <Input id="exampleState" name="state" className="modal-bg" />
                 </FormGroup>
               </Col>
               <Col md={2}>
                 <FormGroup>
-                  <Label for="exampleZip" className="text-white">Zip</Label>
-                  <Input id="exampleZip" name="zip" className="modal-bg"/>
+                  <Label for="exampleZip" className="text-white">
+                    Zip
+                  </Label>
+                  <Input id="exampleZip" name="zip" className="modal-bg" />
                 </FormGroup>
               </Col>
             </Row>
             <FormGroup check>
-              <Input id="exampleCheck" name="check" type="checkbox" className="checkbox"/>
+              <Input
+                id="exampleCheck"
+                name="check"
+                type="checkbox"
+                className="checkbox"
+              />
               <Label check for="exampleCheck" className="text-white">
                 Cash on Delivery
               </Label>
@@ -104,8 +135,12 @@ function Cart() {
           <ModalFooter className="modal-bg">
             <Button
               className="btn-modal-2"
-              onClick={() => [toast.success("Order Placed!"),
-                 toast.success("Your Order #BT-3487 is in the Process! Thanks for Shopping!")]}
+              onClick={() => [
+                toast.success("Order Placed!"),
+                toast.success(
+                  "Your Order #BT-3487 is in the Process! Thanks for Shopping!"
+                ),
+              ]}
             >
               Order Placed!
             </Button>
@@ -161,7 +196,7 @@ function Cart() {
                     </Col>
                     <Col lg="2">
                       <h5 className="mb-2 item-price" tag="h6">
-                        Rs {item.price}
+                        {/* Rs {CalculateTotal(item)} */}
                       </h5>
                     </Col>
                     <Col lg="2">
@@ -220,6 +255,9 @@ function Cart() {
                 <p>
                   Taxes, shipping and discounts codes calculated at checkout
                 </p>
+                <div className="total-price-cart">
+                  <h4>{TotalPrice}</h4>
+                </div>
                 <Button
                   className="btns-cart me-2 ms-4"
                   onClick={() => setModalOpen(true)}

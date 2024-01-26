@@ -9,14 +9,15 @@ import ErrorPage from "./pages/error/ErrorPage";
 import Checkout from "./pages/checkout/Checkout";
 import LogOut from "./pages/logOut/LogOut";
 import { ToastContainer } from "react-toastify";
-
+import { useSelector } from "react-redux";
 
 // remember to add loader before anything appears on the screen
 
 function App() {
+  const cart = useSelector((state)=> state.cart);
   return (
     <div className="App">
-      <Navigation />
+      <Navigation size={cart.length}/>
       <ToastContainer autoClose={1000} position="top-center"/>
       <Routes>
         <Route path="/" element={<Home />} />

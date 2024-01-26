@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logout, selectUser } from "../../redux/user";
 import "../navigation/Navigation.css"
 
-function Navigation() {
+function Navigation({size}) {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
@@ -105,6 +105,7 @@ function Navigation() {
               <li Class="nav-item nav-icons">
                 <Link Class="nav-link mx-lg-2 mx-1" to="/cart">
                   <AiOutlineShoppingCart />
+                  <span className="cart-size px-1 ">{size}</span>
                 </Link>
               </li>
             </ul>

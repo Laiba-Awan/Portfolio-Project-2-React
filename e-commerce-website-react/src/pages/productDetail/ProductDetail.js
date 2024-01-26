@@ -4,13 +4,7 @@ import { BestSellProducts, NewArrivals } from "../../mockData";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart";
 import Footer from "../../components/footer/Footer";
-import {
-  Spinner,
-  Container,
-  Row,
-  Col,
-  Button,
-} from "reactstrap";
+import { Spinner, Container, Row, Col, Button } from "reactstrap";
 
 function ProductDetail({ images }) {
   const [loading, setLoading] = useState(true);
@@ -41,6 +35,9 @@ function ProductDetail({ images }) {
   const handleImgChange = (item) => {
     setProductImg(item);
   };
+  const CalculateTotal = () => {
+    return product.price * quantity;
+  };
   return (
     <div>
       <Container fluid className="bg-detail-pg text-white p-0">
@@ -61,7 +58,10 @@ function ProductDetail({ images }) {
                 {product.images &&
                   product.images.map((item, index) => {
                     return (
-                      <Col lg="2" className="me-lg-2 me-md-2 p-0 mt-3 img-col ms-lg-1 ms-1 mb-md-4 mb-4">
+                      <Col
+                        lg="2"
+                        className="me-lg-2 me-md-2 p-0 mt-3 img-col ms-lg-1 ms-1 mb-md-4 mb-4"
+                      >
                         <img
                           className="img-small mb-2"
                           src={item}
@@ -74,9 +74,15 @@ function ProductDetail({ images }) {
                   })}
               </Row>
             </Col>
-            <Col xs="12" sm="4" lg="6" md="12" className="mt-lg-5 pt-lg-3 px-3 px-lg-0">
+            <Col
+              xs="12"
+              sm="4"
+              lg="6"
+              md="12"
+              className="mt-lg-5 pt-lg-3 px-3 px-lg-0"
+            >
               <h2 className="product-title">{product.name}</h2>
-
+              <h3>Total: Rs{CalculateTotal()}</h3>
               <h5 className="mb-2 text-white" tag="h6">
                 Rs {product.price}
               </h5>
