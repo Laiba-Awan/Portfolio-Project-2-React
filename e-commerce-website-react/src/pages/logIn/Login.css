@@ -108,7 +108,7 @@
 
 @media (min-width: 800px) {
   .login-container {
-    width: 90% !important;
+    width: 70% !important;
   }
   .input-fields {
     width: 490px !important;
