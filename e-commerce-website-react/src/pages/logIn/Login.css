@@ -7,7 +7,6 @@
   width: 100%;
   min-height: 100%;
   background-size: cover;
-  /* z-index: -1; */
 }
 .login-container {
   background-color: rgba(255, 255, 255, 0.218);
@@ -44,6 +43,7 @@
   border-radius: 4px !important;
   background-color: #eda620 !important;
   color: #fff !important;
+  border: none;
 }
 .Errors {
   color: red;
@@ -51,7 +51,12 @@
 .text-clr {
   color: #a2a4a9;
 }
-
+.form-control{
+  box-shadow: none !important;
+}
+.form-control:focus{
+  box-shadow: none !important;
+}
 /* Media Quries */
 @media (max-width: 556px) {
   .form {

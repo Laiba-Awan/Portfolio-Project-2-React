@@ -14,7 +14,6 @@
 }
 .card-bg {
   border-radius: 7px;
-  /* height: 500px; */
   cursor: pointer;
 }
 .card-bg:hover {
@@ -25,6 +24,11 @@
   color: #fff;
   width: 100%;
   border: none;
+}
+
+.stars > span {
+  font-size: 30px;
+  color: #deb15e;
 }
 .btn-cards:hover {
   box-shadow: 0px 0px 10px 0px #eda620;
@@ -40,10 +44,6 @@
   cursor: pointer;
 }
 
-.img-about {
-  height: 500px;
-  border-radius: 8px;
-}
 .detail-card {
   border-radius: 10px;
   width: 300px;
@@ -67,6 +67,10 @@
     display: flex !important;
     flex-direction: row !important;
     width: 70px;
+  }
+  .stars > span {
+    font-size: 20px;
+    color: #deb15e;
   }
 }
 

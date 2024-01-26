@@ -22,12 +22,12 @@ function Footer() {
               <div class="mb-3 flex-lg-row d-flex flex-column pt-lg-2">
                 <input
                   type="email"
-                  class="form-control me-2 mb-lg-0 mb-2"
+                  class="form-control form-color me-2 mb-lg-0 mb-2"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="Enter your email address"
                 />
-                <button type="button" class="btn btn-primary form-colors">
+                <button type="button" class="btn btn-footer form-colors">
                   Subscribe
                 </button>
               </div>

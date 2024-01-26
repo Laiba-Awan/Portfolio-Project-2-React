@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { emptyCart, removeFromCart } from "../../redux/cart";
 import { Button } from "react-scroll";
 import "../cart/cart.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { TiDelete } from "react-icons/ti";
 import Footer from "../../components/footer/Footer";
 import { toast } from "react-toastify";
@@ -45,7 +45,7 @@ function Cart() {
 
   // useEffect(() => {
   //   handleTotalPrice();
-  // });
+  // },[]);
 
   const handleDlt = (item) => {
     dispatch(removeFromCart(item.id));
@@ -59,8 +59,6 @@ function Cart() {
       toast.error("Cart is already Empty!");
     }
   };
-
-
 
   return (
     <>
@@ -150,47 +148,62 @@ function Cart() {
             </Button>
           </ModalFooter>
         </Modal>
+
         {user ? (
           <Container>
             <Row className="mt-5">
-              <Col xs="12" sm="4" lg="8" className="col-br">
-                <Row className="header-cart d-flex justify-content-evenly">
-                  <Col
-                    lg="6"
-                    xs="6"
-                    md=""
-                    className="col-cart-sm mt-3 text-center pb-3"
-                  >
-                    <h5 className="heading-t-br">Product</h5>{" "}
+              <Col xs="12" sm="12" lg="8" className="col-br mb-5 mb-lg-0">
+                <Row className="header-cart">
+                  <Col lg="6" xs="6" md="8" className="col-cart-sm mt-3 pb-3 ms-lg-5">
+                    <h5 className="heading-t-br">Product</h5>
                   </Col>
-                  <Col lg="3" xs="1" className="pt-3 pb-2 col2-cart-sm">
-                    <h5 className="heading-t-br">Price</h5>
+                  <Col
+                    lg="3"
+                    xs="2"
+                    md="2"
+                    className="pt-3 pb-2 col2-cart-sm d-flex justify-content-lg-center"
+                  >
+                    <h5 className="heading-t-br ps-lg-3 ms-lg-5 ps-md-1 ps-4">
+                      Price
+                    </h5>
                   </Col>
                 </Row>
                 {cart.map((item) => (
                   <Row
                     key={item.id}
                     className="d-flex col-br flex-row align-items-center justify-content-center"
-                    >
+                  >
                     <Col
-                      className="d-flex flex-lg-row  flex-column my-2 align-items-lg-center"
+                      className="d-flex flex-row ps-0 my-3 align-items-center"
                       lg="6"
+                      xs="6"
+                      md="6"
                     >
                       <img
                         className="image img-cart"
                         alt="Sample"
                         src={item.imgUrl}
                       />
-                      <h5 className="ps-lg-3 mb-0 pt-1 heading-cart">
+                      <h5 className="ps-lg-3 mb-0 pt-1 ps-2 heading-cart">
                         {item.name}
                       </h5>
                     </Col>
-                    <Col lg="3" className="d-flex justify-content-end">
-                      <h5 className="mb-2 item-price" tag="h6">
+                    <Col
+                      lg="3"
+                      md="3"
+                      xs="3"
+                      className="d-flex justify-content-end"
+                    >
+                      <h5 className="mb-0 item-price" tag="h6">
                         Rs {item.price}
                       </h5>
                     </Col>
-                    <Col className="d-flex justify-content-center" lg="2">
+                    <Col
+                      className="d-flex justify-content-center"
+                      lg="2"
+                      xs="2"
+                      md="2"
+                    >
                       <TiDelete
                         className="dlt-btn"
                         onClick={() => handleDlt(item)}
@@ -205,9 +218,7 @@ function Cart() {
                     <h2 className="mt-3">Cart Total</h2>
                   </Col>
                 </Row>
-                <h3 className="mt-3">Total: {getTotal()}</h3>
-                <hr />
-                <h5 className="text-cart">Estimate Shopping</h5>
+                <h5 className="text-cart mt-lg-3 mt-4">Estimate Shopping</h5>
                 <FormGroup>
                   <Label for="exampleSelect">Choose Country</Label>
                   <Input
@@ -223,13 +234,16 @@ function Cart() {
                 <Input
                   type="text"
                   placeholder="Postal / zip Code"
-                  className="cart-input mb-3"
+                  className="input-cart mb-3"
                 />
                 <p>
                   Taxes, shipping and discounts codes calculated at checkout
                 </p>
+                <hr />
+                {/* <h3>{TotalPrice}</h3> */}
+                <h3 className="ms-lg-2 pb-2 pt-3">Total: {getTotal()}</h3>
                 <Button
-                  className="btns-cart me-2 ms-4"
+                  className="btns-cart me-2 ms-lg-2 mb-2 mb-lg-0"
                   onClick={() => setModalOpen(true)}
                 >
                   Proceed to Checkout

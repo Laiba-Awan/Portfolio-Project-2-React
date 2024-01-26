@@ -4,14 +4,14 @@ import "../about/About.css";
 function About() {
   return (
     <div className="bg-about">
-      <h3 className="heading-about text-center pt-lg-5 pt-4 pb-lg-4 pb-2">About Us</h3>
+      <h3 className="heading-about text-center pt-lg-5 pt-4  pt-md-5 pb-md-3 pb-lg-4 pb-3">About Us</h3>
       <div className="container">
         <div className="row ">
           <div className="col-lg-6 col-12 pb-lg-5 pb-3 d-flex justify-content-lg-end">
           <img src="https://static.tripzilla.com/thumb/f/9/168185_800x.jpg" alt="about-img" className="img-about"/>
           </div>
           <div className="col-lg-6 col-12 mb-5 d-flex align-items-center flex-column">
-            <p className="pt-lg-5">
+            <p className="pt-lg-5 pt-2 pt-md-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
               hic impedit suscipit deleniti quidem ut nemo quis voluptatem
               dolor. Assumenda?Lorem ipsum dolor sit, amet consectetur

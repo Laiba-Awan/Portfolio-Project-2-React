@@ -190,9 +190,9 @@
     margin: 0;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 391px) {
     .navbar-brand {
         position: relative;
-        left: 30px;
+        left: 50px;
       }  
 }

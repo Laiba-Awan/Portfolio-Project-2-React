@@ -53,7 +53,7 @@ function BestSelling() {
     }, 1000);
   };
   return (
-    <Container className="mt-lg-5 mt-5 text-center">
+    <Container className="mt-lg-5 mt-5 mb-lg-5 mb-4 text-center">
       {/* <Row>
         <Col
           className="d-flex flex-column align-items-lg-end align-items-center justify-content-center"
@@ -96,7 +96,7 @@ function BestSelling() {
       {loading ? <Spinner color="warning"></Spinner> : null}
       <Row>
         {ProductList.map((item, index) => (
-          <Col key={`${index}`} xs="12" lg="3" md="4">
+          <Col key={`${index}`} xs="12" lg="3" md="6" className="px-4 my-2 my-lg-0 px-lg-2">
             <Card
               className="card card-bg mb-lg-4 mb-3 ms-lg-0"
               onClick={() => onClickDetail(item.id)}
@@ -108,7 +108,6 @@ function BestSelling() {
                   Rs{item.price}
                 </CardSubtitle>
                 <Button
-                  // color="primary"
                   className="btn-cards btn"
                   onClick={(e) => {
                     e.stopPropagation();

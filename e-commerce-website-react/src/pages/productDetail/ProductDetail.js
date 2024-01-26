@@ -4,9 +4,11 @@ import { BestSellProducts, NewArrivals } from "../../mockData";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart";
 import Footer from "../../components/footer/Footer";
+import StarRating from "./StarRating";
+
 import { Spinner, Container, Row, Col, Button } from "reactstrap";
 
-function ProductDetail({ images }) {
+function ProductDetail() {
   const [loading, setLoading] = useState(true);
   const [product, setProduct] = useState({});
   const [productImg, setProductImg] = useState("");
@@ -43,7 +45,7 @@ function ProductDetail({ images }) {
       <Container fluid className="bg-detail-pg text-white p-0">
         <Container className="mb-5 pt-5">
           {loading ? <Spinner color="warning"></Spinner> : null}
-          <Row className="">
+          <Row>
             <Col xs="12" sm="4" lg="6" md="12">
               <Row>
                 <Col lg="9" className="d-flex justify-content-center mb-lg-4">
@@ -79,18 +81,26 @@ function ProductDetail({ images }) {
               sm="4"
               lg="6"
               md="12"
-              className="mt-lg-5 pt-lg-3 px-3 px-lg-0"
+              className="mt-lg-1 pt-lg-3 px-3 px-lg-0"
             >
-              <h2 className="product-title">{product.name}</h2>
-              <h3>Total: Rs{CalculateTotal()}</h3>
-              <h5 className="mb-2 text-white" tag="h6">
+              <div className="stars">
+               <StarRating stars={product.rating} />
+              </div>
+
+              <h2 className="product-title mt-3">{product.name}</h2>
+
+              <h5 className="mb-2 mt-2 text-white" tag="h6">
                 Rs {product.price}
               </h5>
+              <h5 className="mb-1 mt-3">Description:</h5>
               <p>{product.description}</p>
+              <h5 className="mb-1 mt-3">Formulation:</h5>
               <p>{product.Formulation}</p>
+              <h5 className="mb-1 mt-3">Usage Instruction:</h5>
               <p>{product.Usage}</p>
-              <p>{product.rating}</p>
-
+              <h3 className="mb-lg-3 mb-2 mt-lg-5 mt-5 mt-md-5 mb-md-2">
+                Total: Rs{CalculateTotal()}
+              </h3>
               <Button
                 className="btn-inc"
                 onClick={() => {

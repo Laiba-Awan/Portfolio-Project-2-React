@@ -9,12 +9,12 @@ export const BestSellProducts = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     images: [
       "https://reana.pk/cdn/shop/files/IMG_2125-Recovered_aaddc4db-f917-4d13-94ce-38c241c8757d.jpg?v=1704267597&width=1946",
@@ -27,8 +27,8 @@ export const BestSellProducts = [
     ],
     imgUrl:
       "https://reana.pk/cdn/shop/files/Her-40-Version011_82e0871e-1e70-4d1b-a9e7-baad1c996659.png?v=1704267612&width=1946",
-  
-    rating: 5,
+
+    rating: 4.5,
   },
 
   {
@@ -41,12 +41,12 @@ export const BestSellProducts = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     imgUrl: "https://cozmetica.pk/cdn/shop/files/moisture-1.jpg?v=1704290139",
     images: [
       "https://cozmetica.pk/cdn/shop/files/MoistureMagnet.png?v=1704290139",
@@ -57,19 +57,19 @@ export const BestSellProducts = [
 
       "https://cozmetica.pk/cdn/shop/files/moisture-1.jpg?v=1704290139",
     ],
-   
-    rating: 5,
+
+    rating: 4,
   },
 
   {
     id: "Pr-3",
     name: "Ordinary Serum",
     description:
-    "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
-  Formulation:
-    "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
-  Usage:
-    "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
+      "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
+    Formulation:
+      "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
+    Usage:
+      "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
     reviews: [
       {
         text: "Absolutely Amazing Product",
@@ -88,18 +88,18 @@ export const BestSellProducts = [
       "https://cozmetica.pk/cdn/shop/files/pigment-1.jpg?v=1704290238",
     ],
 
-    rating: 5,
+    rating: 3,
   },
 
   {
     id: "Pr-4",
     name: "Ordinary Serum",
     description:
-    "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
-  Formulation:
-    "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
-  Usage:
-    "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
+      "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
+    Formulation:
+      "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
+    Usage:
+      "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
     reviews: [
       {
         text: "Absolutely Amazing Product",
@@ -117,18 +117,18 @@ export const BestSellProducts = [
 
       "https://reana.pk/cdn/shop/files/EARTHY-ROSE.jpg?v=1699074388&width=1946",
     ],
- 
+
     rating: 5,
   },
   {
     id: "Pr-5",
     name: "Ordinary Serum",
     description:
-    "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
-  Formulation:
-    "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
-  Usage:
-    "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
+      "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
+    Formulation:
+      "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
+    Usage:
+      "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
     reviews: [
       {
         text: "Absolutely Amazing Product",
@@ -148,18 +148,18 @@ export const BestSellProducts = [
       "https://reana.pk/cdn/shop/files/ohsocherry.png?v=1699075739&width=1946",
     ],
 
-    rating: 5,
+    rating: 4,
   },
 
   {
     id: "Pr-6",
     name: "Ordinary Serum",
     description:
-    "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
-  Formulation:
-    "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
-  Usage:
-    "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
+      "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
+    Formulation:
+      "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
+    Usage:
+      "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
     reviews: [
       {
         text: "Absolutely Amazing Product",
@@ -178,18 +178,18 @@ export const BestSellProducts = [
 
       "https://reana.pk/cdn/shop/files/HER9058copy1.jpg?v=1699076619&width=1946",
     ],
-    rating: 5,
+    rating: 4.5,
   },
 
   {
     id: "Pr-7",
     name: "Ordinary Serum",
     description:
-    "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
-  Formulation:
-    "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
-  Usage:
-    "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
+      "Product Description:Radiant Glow Hydrating Vitamin C Serum is a powerful and rejuvenating skincare solution designed to boost your skin's radiance and hydration. Packed with potent antioxidants, this serum not only nourishes your skin but also helps combat the effects of environmental stressors.",
+    Formulation:
+      "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
+    Usage:
+      "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
     reviews: [
       {
         text: "Absolutely Amazing Product",
@@ -209,7 +209,7 @@ export const BestSellProducts = [
       "https://reana.pk/cdn/shop/files/HER86254x5c1.jpg?v=1699077317&width=1946",
     ],
 
-    rating: 5,
+    rating: 4,
   },
 
   {
@@ -221,12 +221,12 @@ export const BestSellProducts = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl:
       "https://reana.pk/cdn/shop/files/Her-27-Version011.png?v=1699076210&width=1946",
@@ -240,7 +240,7 @@ export const BestSellProducts = [
       "https://reana.pk/cdn/shop/files/HER65804x51.jpg?v=1699076215&width=1946",
     ],
 
-    rating: 5,
+    rating: 3,
   },
 ];
 
@@ -255,12 +255,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl:
       "https://reana.pk/cdn/shop/files/goodnightglow2new.png?v=1699075055&width=1946",
@@ -273,7 +273,7 @@ export const NewArrivals = [
 
       "https://reana.pk/cdn/shop/files/goodnightglownew.png?v=1699075078&width=1946",
     ],
-    rating: 5,
+    rating: 2,
   },
 
   {
@@ -285,12 +285,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl:
       "https://reana.pk/cdn/shop/files/WhatsApp_Image_2023-03-07_at_11.52.13_AM_2_2a89d3a6-1e5c-4baa-8b9c-da1d8400ea07.jpg?v=1704267834&width=1946",
@@ -304,7 +304,7 @@ export const NewArrivals = [
       "https://reana.pk/cdn/shop/files/juicy-mist_3f97fa89-7189-48d0-8716-3492aea8e456.jpg?v=1704267841&width=1946",
     ],
 
-    rating: 5,
+    rating: 2,
   },
 
   {
@@ -316,12 +316,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+      
+    reviews: [
+      { text: "Absolutely Amazing Product", 
+        rating: "4.5" 
+      }
+    ],
     price: 2500,
     imgUrl:
       "https://reana.pk/cdn/shop/files/Her-19-Version011.png?v=1699073937&width=1946",
@@ -335,7 +335,7 @@ export const NewArrivals = [
       "https://reana.pk/cdn/shop/files/dewdrops.png?v=1699074472&width=1946",
     ],
 
-    rating: 5,
+    rating: 4,
   },
 
   {
@@ -347,12 +347,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl: "https://m.media-amazon.com/images/I/81jQG6OJ6ML._SX466_.jpg",
     images: [
@@ -377,12 +377,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl:
       "https://skinshop.pk/cdn/shop/products/Santi-Clear-2.jpg?v=1698177618&width=600",
@@ -408,12 +408,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl:
       "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_f9ccee53-3cf5-4b33-9d64-090016ec751a.jpg?v=1704808654&width=800",
@@ -439,12 +439,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl:
       "https://cdn.shopify.com/s/files/1/0791/2083/products/Ma_nyo-Pure-Cleansing-Oil.jpg?v=1650555197&width=800",
@@ -470,12 +470,12 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      reviews: [
-        {
-          text: "Absolutely Amazing Product",
-          rating: "4.5",
-        },
-      ],
+    reviews: [
+      {
+        text: "Absolutely Amazing Product",
+        rating: "4.5",
+      },
+    ],
     price: 2500,
     imgUrl:
       "https://cdn11.bigcommerce.com/s-gud7r2x2lu/images/stencil/1920w/products/1211/6781/OLAY_eContent_SuperSerum_Day_MOI_NoDerm__49545.1698347086.jpg?c=2",
@@ -498,24 +498,18 @@ export const ReviewsData = [
   {
     id: "Rv-1",
     name: "Joshua",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, doloribus",
-    rating: 3,
-    imgUrl: "",
+    text: "“You made my life just heaven, I had severe acne from past two years and nothing worked before but your skin Care product just did magic, Thank you So much!”",
   },
 
   {
     id: "Rv-1",
     name: "Samuel",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, doloribus",
-    rating: 5,
-    imgUrl: "",
+    text: "“You made my life just heaven, I had severe acne from past two years and nothing worked before but your skin Care product just did magic, Thank you So much!”",
   },
 
   {
     id: "Rv-1",
     name: "Benedict",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, doloribus",
-    rating: 4.5,
-    imgUrl: "",
+    text: "“You made my life just heaven, I had severe acne from past two years and nothing worked before but your skin Care product just did magic, Thank you So much!”",
   },
 ];
