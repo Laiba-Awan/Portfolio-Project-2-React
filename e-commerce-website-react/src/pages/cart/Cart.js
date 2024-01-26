@@ -17,7 +17,6 @@ import {
   Input,
   FormGroup,
   Label,
-
 } from "reactstrap";
 
 function Cart() {
@@ -50,22 +49,67 @@ function Cart() {
     <>
       <Container fluid className="bg-cart text-white mb-5">
         <Modal isOpen={modalOpen} toggle={() => setModalOpen(false)}>
-          <ModalHeader toggle={() => setModalOpen(false)}>
-            Modal title
+          <ModalHeader
+            className="modal-bg text-white"
+            toggle={() => setModalOpen(false)}
+          >
+            Check Out
           </ModalHeader>
-          <ModalBody>
-            <input type="text" placeholder="" />
-            <input type="text" />
-            <input type="text" />
+          <ModalBody className="modal-bg">
+            <FormGroup>
+              <Label for="exampleAddress" className="text-white">Address</Label>
+              <Input
+              className="modal-bg"
+                id="exampleAddress"
+                name="address"
+                placeholder="1234 Main St"
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="exampleAddress2" className="text-white">Address 2</Label>
+              <Input
+              className="modal-bg"
+                id="exampleAddress2"
+                name="address2"
+                placeholder="Apartment, studio, or floor"
+              />
+            </FormGroup>
+            <Row>
+              <Col md={6}>
+                <FormGroup>
+                  <Label for="exampleCity" className="text-white">City</Label>
+                  <Input id="exampleCity" name="city" className="modal-bg"/>
+                </FormGroup>
+              </Col>
+              <Col md={4}>
+                <FormGroup>
+                  <Label for="exampleState" className="text-white">State</Label>
+                  <Input id="exampleState" name="state" className="modal-bg"/>
+                </FormGroup>
+              </Col>
+              <Col md={2}>
+                <FormGroup>
+                  <Label for="exampleZip" className="text-white">Zip</Label>
+                  <Input id="exampleZip" name="zip" className="modal-bg"/>
+                </FormGroup>
+              </Col>
+            </Row>
+            <FormGroup check>
+              <Input id="exampleCheck" name="check" type="checkbox" className="checkbox"/>
+              <Label check for="exampleCheck" className="text-white">
+                Cash on Delivery
+              </Label>
+            </FormGroup>
           </ModalBody>
-          <ModalFooter>
+          <ModalFooter className="modal-bg">
             <Button
-              color="primary"
-              onClick={() => toast.success("Order Placed!")}
+              className="btn-modal-2"
+              onClick={() => [toast.success("Order Placed!"),
+                 toast.success("Your Order #BT-3487 is in the Process! Thanks for Shopping!")]}
             >
               Order Placed!
             </Button>
-            <Button color="secondary" onClick={() => setModalOpen(false)}>
+            <Button className="btn-modal" onClick={() => setModalOpen(false)}>
               Cancel
             </Button>
           </ModalFooter>
@@ -74,18 +118,27 @@ function Cart() {
           <Container>
             <Row className="mt-5">
               <Col xs="12" sm="4" lg="8" className="col-br">
-                <Row className="header-cart">
-                  <Col lg="6 mt-3 text-center pb-3">
-                    <h5>Product</h5>{" "}
+                <Row className="header-cart d-flex justify-content-evenly">
+                  <Col
+                    lg="6"
+                    xs="6"
+                    md=""
+                    className="col-cart-sm mt-3 text-center pb-3"
+                  >
+                    <h5 className="heading-t-br">Product</h5>{" "}
                   </Col>
-                  <Col lg="2" className="pt-3 pb-2">
-                    <h5>Price</h5>
+                  <Col lg="2" xs="1" className="pt-3 pb-2 col2-cart-sm">
+                    <h5 className="heading-t-br">Price</h5>
                   </Col>
-                  <Col lg="2" className="pt-3 pb-2">
-                    <h5>Quantity</h5>
+                  <Col lg="2" xs="1" className="pt-3 pb-2 col3-cart-sm">
+                    <h5 className="heading-t-br">Quantity</h5>
                   </Col>
-                  <Col lg="2" className="pt-3 pb-2">
-                    <h5>Sub Total</h5>
+                  <Col
+                    lg="2"
+                    xs="1"
+                    className="d-flex justify-content-end pt-3 pt-lg-3 pb-lg-2 col4-cart-sm"
+                  >
+                    <h5 className="heading-t-br">Sub Total</h5>
                   </Col>
                 </Row>
                 {cart.map((item) => (
@@ -94,7 +147,7 @@ function Cart() {
                     className="d-flex col-br flex-row align-items-center justify-content-center"
                   >
                     <Col
-                      className="d-flex flex-row my-2 align-items-center"
+                      className="d-flex flex-lg-row  flex-column my-2 align-items-lg-center"
                       lg="6"
                     >
                       <img
@@ -102,12 +155,12 @@ function Cart() {
                         alt="Sample"
                         src={item.imgUrl}
                       />
-                      <h5 className="ps-3 mb-0 pt-1 heading-cart">
+                      <h5 className="ps-lg-3 mb-0 pt-1 heading-cart">
                         {item.name}
                       </h5>
                     </Col>
                     <Col lg="2">
-                      <h5 className="mb-2 " tag="h6">
+                      <h5 className="mb-2 item-price" tag="h6">
                         Rs {item.price}
                       </h5>
                     </Col>
@@ -149,13 +202,24 @@ function Cart() {
                 <h5 className="text-cart">Estimate Shopping</h5>
                 <FormGroup>
                   <Label for="exampleSelect">Choose Country</Label>
-                  <Input id="exampleSelect" name="select" className="input-cart" type="select">
+                  <Input
+                    id="exampleSelect"
+                    name="select"
+                    className="input-cart"
+                    type="select"
+                  >
                     <option>Pakistan</option>
                     <option>USA</option>
                   </Input>
                 </FormGroup>
-                <Input type="text" placeholder="Postal / zip Code" className="cart-input mb-3"/>
-                <p>Taxes, shipping and discounts codes calculated at checkout</p>
+                <Input
+                  type="text"
+                  placeholder="Postal / zip Code"
+                  className="cart-input mb-3"
+                />
+                <p>
+                  Taxes, shipping and discounts codes calculated at checkout
+                </p>
                 <Button
                   className="btns-cart me-2 ms-4"
                   onClick={() => setModalOpen(true)}

@@ -15,7 +15,7 @@
 }
 .btn-dec{
     border: 1px solid #B7BCBC;
-    width: 40px;
+    width: 27px;
     background-color: #0D0D0D;
 }
 .dlt-btn{
@@ -47,4 +47,75 @@
 .input-cart{
     background-color: #0D0D0D;
     color: #fff !important;
+}
+.modal-bg{
+    background-color: #312E2E !important;
+    box-shadow: none;
+}
+::placeholder{
+    color: #ffffff9c !important;
+}
+.checkbox{
+    box-shadow: none !important;
+}
+.checkbox:focus{
+    background-color: #EDA620;
+    border: none;
+}
+.btn-modal{
+    background-color: #EDA620;
+    color: #312E2E;
+    height: 44px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+}
+.btn-modal-2{
+    border: 1px solid #EDA620;
+    color: #EDA620;
+    height: 44px;
+    width: 120px;  
+    background-color: #312E2E; 
+    border-radius: 5px;
+
+}
+@media (max-width: 576px) {
+
+    .col-cart-sm{
+        width: 30%;
+    
+    }
+    .col2-cart-sm{
+        width: 10%;
+    
+    }
+    .col3-cart-sm{
+        width: 15%;
+    
+    }
+    .col4-cart-sm{
+        width: 20%;
+    
+    }
+    .heading-t-br{
+        font-size: 0.9rem !important;
+    }
+    .img-cart{
+        height: 30px;
+        width: 30px;
+    }
+    .heading-cart{
+        font-size: 1rem;
+    }
+    .item-price{
+        font-size: 0.9rem;
+    }
+    .btn-dec{
+        width: 23px;
+        height: 23px;
+        font-size: 0.9rem;
+    }
+    .dlt-btn{
+        font-size: 20px;
+    }
 }

@@ -9,6 +9,15 @@
     width: 200px;
     border-radius: 5px;
 }
+.btn-home:hover{
+    box-shadow: 0px 0px 10px 0px #EDA620;
+}
+.btn-log0ut:hover{
+    background-color: #000;
+    border: 1px solid #EDA620;
+    color: #EDA620;
+    box-shadow: 0px 0px 10px 0px #EDA620;
+}
 .btn-home{
     background-color: #000;
     height: 40px;

@@ -15,10 +15,9 @@ import {
 function Reviews() {
   return (
     <div className="bg-reviews text-center text-white pt-5 pb-5">
-      <h5>2,157 have said how good RareBlocks</h5>
+      <h5>2,157 have said how good Elegence</h5>
       <h4>Our happy clients say about us</h4>
       <Container>
-        <h2 className="text-center">Albums List</h2>
         <Row className="d-flex justify-content-center">
           {ReviewsData.map((item, index) => (
             <Col key={`${index}`} xs="12" lg="3" md="4">

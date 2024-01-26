@@ -16,7 +16,7 @@ function LogOut() {
       </h2>
       <button
         type="button"
-        className="btn-log0ut btn mb-2"
+        className="btn-log0ut mb-2"
         onClick={() => {
           navigate("/login");
         }}
@@ -24,7 +24,7 @@ function LogOut() {
         Login
       </button>
       <button
-      className="btn-home btn"
+      className="btn-home"
         type="button"
         onClick={() => {
           navigate("/");
