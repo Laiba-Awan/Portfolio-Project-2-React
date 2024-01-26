@@ -6,16 +6,10 @@ import { addToCart } from "../../redux/cart";
 import Footer from "../../components/footer/Footer";
 import {
   Spinner,
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
   Container,
   Row,
   Col,
   Button,
-  ButtonGroup,
 } from "reactstrap";
 
 function ProductDetail({ images }) {
@@ -53,7 +47,7 @@ function ProductDetail({ images }) {
         <Container className="mb-5 pt-5">
           {loading ? <Spinner color="warning"></Spinner> : null}
           <Row className="">
-            <Col xs="12" sm="4" lg="6">
+            <Col xs="12" sm="4" lg="6" md="12">
               <Row>
                 <Col lg="9" className="d-flex justify-content-center mb-lg-4">
                   <img
@@ -63,13 +57,13 @@ function ProductDetail({ images }) {
                   />
                 </Col>
               </Row>
-              <Row>
+              <Row className="d-flex justify-content-lg-start justify-content-center">
                 {product.images &&
                   product.images.map((item, index) => {
                     return (
-                      <Col lg="2" className="me-2 ms-1 d-flex flex-column">
+                      <Col lg="2" className="me-lg-2 me-md-2 p-0 mt-3 img-col ms-lg-1 ms-1 mb-md-4 mb-4">
                         <img
-                          className="img-small"
+                          className="img-small mb-2"
                           src={item}
                           alt={item.name}
                           key={index}
@@ -80,7 +74,7 @@ function ProductDetail({ images }) {
                   })}
               </Row>
             </Col>
-            <Col xs="12" sm="4" lg="6" className="mt-lg-5 pt-lg-3">
+            <Col xs="12" sm="4" lg="6" md="12" className="mt-lg-5 pt-lg-3 px-3 px-lg-0">
               <h2 className="product-title">{product.name}</h2>
 
               <h5 className="mb-2 text-white" tag="h6">

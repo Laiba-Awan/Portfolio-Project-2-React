@@ -17,7 +17,7 @@ import {
   Input,
   FormGroup,
   Label,
-  Table,
+
 } from "reactstrap";
 
 function Cart() {
@@ -70,7 +70,7 @@ function Cart() {
             </Button>
           </ModalFooter>
         </Modal>
-        {user.password ? (
+        {user ? (
           <Container>
             <Row className="mt-5">
               <Col xs="12" sm="4" lg="8" className="col-br">

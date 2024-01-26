@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RxAvatar } from "react-icons/rx";
-// import { IoIosSearch } from "react-icons/io";
 import { useSelector, useDispatch } from "react-redux";
-import { logout, selectUser } from "../redux/user";
+import { logout, selectUser } from "../../redux/user";
+import "../navigation/Navigation.css"
 
 function Navigation() {
   const user = useSelector(selectUser);
@@ -19,9 +19,9 @@ function Navigation() {
 
   return (
     <>
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg">
         <div Class="container-fluid">
-          <div className="nav-brand d-flex align-items-center justify-content-center">
+          <div className="nav-brand d-flex">
             <Link
               className="navbar-brand ms-4 ms-lg-0 ms-md-0 text-center pb-lg-2"
               to="/"

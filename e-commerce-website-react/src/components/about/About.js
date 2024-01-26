@@ -4,10 +4,10 @@ import "../about/About.css";
 function About() {
   return (
     <div className="bg-about">
-      <h3 className="heading-about text-center pt-lg-5 pb-lg-4">About Us</h3>
+      <h3 className="heading-about text-center pt-lg-5 pt-4 pb-lg-4 pb-2">About Us</h3>
       <div className="container">
         <div className="row ">
-          <div className="col-lg-6 col-12 pb-lg-5 d-flex justify-content-end">
+          <div className="col-lg-6 col-12 pb-lg-5 pb-3 d-flex justify-content-lg-end">
           <img src="https://static.tripzilla.com/thumb/f/9/168185_800x.jpg" alt="about-img" className="img-about"/>
           </div>
           <div className="col-lg-6 col-12 mb-5 d-flex align-items-center flex-column">

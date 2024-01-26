@@ -44,7 +44,7 @@ function LogIn() {
   }
   return (
     <>
-      <div className="pt-5 bg-login pb-5 text-white">
+      <div className="pt-5 pt-lg-2 bg-login pb-5 text-white">
         <div className="container-fluid d-flex flex-column pb-5  login-container mt-lg-3 pt-5 pt-4">
           <h2 className="heading-login pb-3 m-0 text-center">Elegence</h2>
           <h4 className="text-center">Welcome Back 👋</h4>

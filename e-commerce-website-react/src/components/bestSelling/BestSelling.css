@@ -12,9 +12,22 @@
   height: 350px;
   border-radius: 7px;
 }
+.card-bg {
+  border-radius: 7px;
+  /* height: 500px; */
+  cursor: pointer;
+}
+.card-bg:hover {
+  box-shadow: 0px 0px 30px 0px #eda620;
+}
 .btn-cards {
   background-color: #eda620 !important;
   color: #fff;
+  width: 100%;
+  border: none;
+}
+.btn-cards:hover {
+  box-shadow: 0px 0px 10px 0px #eda620;
 }
 .trending-img {
   height: 250px;
@@ -26,11 +39,7 @@
   width: 130px;
   cursor: pointer;
 }
-.card-bg {
-  border-radius: 7px;
-  /* height: 400px; */
-  cursor: pointer;
-}
+
 .img-about {
   height: 500px;
   border-radius: 8px;
@@ -45,7 +54,37 @@
   height: 450px;
   width: 600px;
 }
+@media (max-width: 576px) {
+  .detail-img {
+    height: 270px;
+    width: 280px;
+  }
+  .img-small {
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .img-col{
+    display: flex !important;
+    flex-direction: row !important;
+    width: 70px;
+  }
+}
 
+@media (min-width: 577px) and (max-width: 992px) {
+  .detail-img {
+    height: 350px;
+    width: 350px;
+  }
+  .img-small {
+    height: 80px !important;
+    width: 80px !important;
+  }
+  .img-col{
+    display: flex !important;
+    flex-direction: row !important;
+    width: 80px;
+  }
+}
 .img-small {
   height: 100px;
   width: 100px;
@@ -79,7 +118,6 @@
   .tab-btns {
     font-size: 0.8rem;
     width: 100px;
-    border: none !important;
   }
 }
 

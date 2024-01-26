@@ -22,10 +22,9 @@ import { useDispatch } from "react-redux";
 
 function BestSelling() {
   const [activeTab, setActiveTab] = useState(0);
-  const [ProductList, setProductList] = useState([]);
+  const [ProductList, setProductList] = useState([""]);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -49,12 +48,12 @@ function BestSelling() {
     setTimeout(() => {
       setLoading(false);
       setActiveTab(tab);
-      setProductList(activeTab === 0 ? NewArrivals :BestSellProducts );
+      setProductList(tab === 0 ? BestSellProducts : NewArrivals);
       console.log("tabValue", activeTab);
     }, 1000);
   };
   return (
-    <Container fluid className="mt-lg-5 mt-5 text-center">
+    <Container className="mt-lg-5 mt-5 text-center">
       {/* <Row>
         <Col
           className="d-flex flex-column align-items-lg-end align-items-center justify-content-center"
@@ -64,7 +63,7 @@ function BestSelling() {
         > */}
       <div className="heading-sec">
         <h3 className="heading-Tp">Trending Products</h3>
-        <Nav tabs className="d-flex justify-content-center mb-lg-4 mb-4">
+        <Nav className="d-flex justify-content-center mb-lg-4 mb-4">
           <NavItem>
             <NavLink
               className="active tab-btns px-0"
@@ -99,7 +98,7 @@ function BestSelling() {
         {ProductList.map((item, index) => (
           <Col key={`${index}`} xs="12" lg="3" md="4">
             <Card
-              className="card card-bg mb-lg-3 mb-3"
+              className="card card-bg mb-lg-4 mb-3 ms-lg-0"
               onClick={() => onClickDetail(item.id)}
             >
               <img className="image-card" alt="Sample" src={item.imgUrl} />
@@ -110,7 +109,7 @@ function BestSelling() {
                 </CardSubtitle>
                 <Button
                   // color="primary"
-                  className="btn-cards"
+                  className="btn-cards btn"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleAddToCart(item);

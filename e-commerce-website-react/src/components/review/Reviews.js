@@ -14,7 +14,7 @@ import {
 
 function Reviews() {
   return (
-    <div className="bg-reviews text-center text-white pt-lg-5 pb-lg-5">
+    <div className="bg-reviews text-center text-white pt-5 pb-5">
       <h5>2,157 have said how good RareBlocks</h5>
       <h4>Our happy clients say about us</h4>
       <Container>

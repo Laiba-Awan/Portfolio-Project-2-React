@@ -34,3 +34,21 @@
     height: 40px !important;
     width: 200px;
 }
+@media (max-width: 576px) {
+  .container-carousel {
+    height: 400px;
+    width: 90%;
+  }
+  .heading-hp{
+    font-size: 2rem;
+}
+.btn-slider{
+  height: 35px !important;
+  font-size: 13px;
+}
+.btn-carousel{
+  height: 35px !important;
+  width: 80px;
+  font-size: 13px;
+}
+}
