@@ -18,13 +18,11 @@ import {
   FormGroup,
   Label,
 } from "reactstrap";
-// import { useParams } from "react-router";
 
 function Cart() {
-  const { cart, user } = useSelector((state) => state);
+  const { cart } = useSelector((state) => state);
+  const {LoggedIn} = useSelector((state)=> state.user);
   const [modalOpen, setModalOpen] = useState(false);
-  // const [TotalPrice, SetTotalPrice] = useState(0);
-  // const { id } = useParams();
   const dispatch = useDispatch();
 
   const getTotal = () => {
@@ -34,18 +32,6 @@ function Cart() {
     });
     return price;
   };
-
-  // const handleTotalPrice = () => {
-  //   let TotalPrice = 0;
-  //   cart.map((item) => {
-  //     return (TotalPrice += quantity * item.price);
-  //   });
-  //   SetTotalPrice(TotalPrice);
-  // };
-
-  // useEffect(() => {
-  //   handleTotalPrice();
-  // },[]);
 
   const handleDlt = (item) => {
     dispatch(removeFromCart(item.id));
@@ -149,7 +135,7 @@ function Cart() {
           </ModalFooter>
         </Modal>
 
-        {user ? (
+        {LoggedIn ? (
           <Container>
             <Row className="mt-5">
               <Col xs="12" sm="12" lg="8" className="col-br mb-5 mb-lg-0">
@@ -240,7 +226,6 @@ function Cart() {
                   Taxes, shipping and discounts codes calculated at checkout
                 </p>
                 <hr />
-                {/* <h3>{TotalPrice}</h3> */}
                 <h3 className="ms-lg-2 pb-2 pt-3">Total: {getTotal()}</h3>
                 <Button
                   className="btns-cart me-2 ms-lg-2 mb-2 mb-lg-0"

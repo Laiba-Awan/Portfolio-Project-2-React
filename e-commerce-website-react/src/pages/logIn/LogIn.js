@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import "../logIn/Login.css";
+import { toast } from 'react-toastify';
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/user";
 import Validation from "../../components/validation/Validation";
 import { useNavigate } from "react-router";
+import "../logIn/Login.css";
+
 
 function LogIn() {
   const navigate = useNavigate();
@@ -15,17 +17,20 @@ function LogIn() {
     password: "",
   });
 
-  const handleLogIn = () => {
-    if (setValues) {
+  const handleLogIn = (e) => {
+    e.preventDefault();
+    if (values.password.length > 8 && values.name.length > 3 && values.email) {
       dispatch(
         login({
-          values,
-          // name: values.name,
-          // email: values.email,
-          // password: values.password,
-          // LoggedIn: true,
+          name: values.name,
+          email: values.email,
+          password: values.password,
         })
       );
+      toast.success("You have Successfully Logged in");
+      navigate("/");
+    } else {
+      setErrors(Validation(values));
     }
   };
   const handleChange = (e) => {
@@ -35,13 +40,6 @@ function LogIn() {
     });
   };
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setErrors(Validation(values));
-    if (values.password.length > 8 && values.name.length > 3 && values.email) {
-      navigate("/");
-    }
-  }
   return (
     <>
       <div className="pt-5 bg-login pb-5 text-white">
@@ -50,7 +48,7 @@ function LogIn() {
           <h4 className="text-center">Welcome Back 👋</h4>
           <p className="text-center text-clr">We are happy to have you back</p>
 
-          <form className="form d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center" onSubmit={handleSubmit}>
+          <form className="form d-lg-flex justify-content-lg-center flex-lg-column align-items-lg-center">
             <div className="mb-3">
               <label for="exampleInputName" className="form-label">
                 Username<sup>*</sup>

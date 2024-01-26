@@ -23,7 +23,6 @@ const cartSlice = createSlice({
       return filter;
     },
     emptyCart: (state, action) => {
-      // toast.error("Removed all the items from cart!");
       return [];
     },
   },

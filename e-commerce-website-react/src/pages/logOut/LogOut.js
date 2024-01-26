@@ -1,18 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import { selectUser } from "../../redux/user";
 import "../logOut/LogOut.css";
 import { useSelector } from "react-redux";
 
 function LogOut() {
   const navigate = useNavigate();
-  const user = useSelector(selectUser);
+  const user = useSelector((state)=> state.user);
 
   return (
     <div className="container d-flex flex-column mt-5 pt-5 align-items-center">
       <h1 className="heading-main mb-2">Logged Out</h1>
       <h2 className="text-white mb-3 text-center">
-        We are sad to see you go <span className="text-center">{user.name}</span>
+        We are sad to see you go <span className="text-center">{user.user}</span>
       </h2>
       <button
         type="button"

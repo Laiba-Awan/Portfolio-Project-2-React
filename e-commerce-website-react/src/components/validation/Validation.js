@@ -1,4 +1,3 @@
-import { toast } from 'react-toastify';
 
 function Validation(values) {
   let error = {};
@@ -26,11 +25,9 @@ function Validation(values) {
   } else {
     error.password = "";
   }
-  if (values.password.length > 8 && values.name.length > 3 && values.email) {
-    toast.success("You have Successfully Logged in");
-  }
 
   return error;
 }
 
 export default Validation;
+

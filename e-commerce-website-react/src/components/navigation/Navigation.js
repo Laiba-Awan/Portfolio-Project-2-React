@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RxAvatar } from "react-icons/rx";
 import { useSelector, useDispatch } from "react-redux";
-import { logout, selectUser } from "../../redux/user";
+import { logout } from "../../redux/user";
 import "../navigation/Navigation.css"
 
 function Navigation({size}) {
-  const user = useSelector(selectUser);
+  const {LoggedIn} = useSelector((state)=> state.user);
   const dispatch = useDispatch();
 
   const handleClick = () => {
@@ -87,7 +87,7 @@ function Navigation({size}) {
                   <RxAvatar />
                 </Link>
                 <ul class="dropdown-menu">
-                  {user.password ? (
+                  {LoggedIn ? (
                     <Link
                       class="dropdown-item"
                       onClick={handleClick}

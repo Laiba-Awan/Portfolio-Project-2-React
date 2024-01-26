@@ -1,4 +1,3 @@
-// import { Link } from "react-scroll";
 import "../carousel/Carousel.css";
 import { Link } from "react-router-dom";
 
