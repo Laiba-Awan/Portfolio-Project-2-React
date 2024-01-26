@@ -18,12 +18,14 @@ import {
   FormGroup,
   Label,
 } from "reactstrap";
+import { Link, useNavigate } from "react-router-dom";
 
 function Cart() {
   const { cart } = useSelector((state) => state);
   const {LoggedIn} = useSelector((state)=> state.user);
   const [modalOpen, setModalOpen] = useState(false);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const getTotal = () => {
     let price = 0;
@@ -240,7 +242,11 @@ function Cart() {
             </Row>
           </Container>
         ) : (
-          <p> please login to Continue.</p>
+          <div className="d-flex align-items-center justify-content-center flex-column">
+          <p className="mt-5 pt-5 pb-2 cart-text">You must Login to View Cart!</p>
+          <Button type="button" className="btns-cart-empty mb-5" onClick={()=>{navigate("/login")}}>Login</Button>
+          </div>
+          
         )}
       </Container>
       <Footer />
