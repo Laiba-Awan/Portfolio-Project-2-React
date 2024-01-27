@@ -108,18 +108,20 @@ export const BestSellProducts = [
     ],
     price: 2500,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/earthyrosenew.png?v=1699074151&width=1946",
+      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_f9ccee53-3cf5-4b33-9d64-090016ec751a.jpg?v=1704808654&width=800",
     images: [
-      "https://reana.pk/cdn/shop/files/earthyrosenew.png?v=1699074151&width=1946",
-      "https://reana.pk/cdn/shop/files/Her-21-Version011.png?v=1699074397&width=1946",
+      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_f9ccee53-3cf5-4b33-9d64-090016ec751a.jpg?v=1704808654&width=800",
 
-      "https://reana.pk/cdn/shop/files/earthyrose.png?v=1699074403&width=1946",
+      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_03_a0e6f132-3301-4aeb-bc1a-5b34802e1b1a.jpg?v=1704808655&width=800",
 
-      "https://reana.pk/cdn/shop/files/EARTHY-ROSE.jpg?v=1699074388&width=1946",
+      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_05_8b22954b-b629-4649-bfc0-ce22343be3ff.jpg?v=1704808655&width=800",
+
+      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_06_45431b07-ea66-45cc-bff4-513cdb8f5238.jpg?v=1704808655&width=800",
     ],
 
     rating: 5,
   },
+  
   {
     id: "Pr-5",
     name: "Ordinary Serum",
@@ -416,15 +418,14 @@ export const NewArrivals = [
     ],
     price: 2500,
     imgUrl:
-      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_f9ccee53-3cf5-4b33-9d64-090016ec751a.jpg?v=1704808654&width=800",
+      "https://reana.pk/cdn/shop/files/EARTHY-ROSE.jpg?v=1699074388&width=1946",
+
     images: [
-      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_01_f9ccee53-3cf5-4b33-9d64-090016ec751a.jpg?v=1704808654&width=800",
+      "https://reana.pk/cdn/shop/files/EARTHY-ROSE.jpg?v=1699074388&width=1946",
+      "https://reana.pk/cdn/shop/files/Her-21-Version011.png?v=1699074397&width=1946",
+      "https://reana.pk/cdn/shop/files/earthyrose.png?v=1699074403&width=1946",
+      "https://reana.pk/cdn/shop/files/earthyrosenew.png?v=1699074151&width=1946",
 
-      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_03_a0e6f132-3301-4aeb-bc1a-5b34802e1b1a.jpg?v=1704808655&width=800",
-
-      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_05_8b22954b-b629-4649-bfc0-ce22343be3ff.jpg?v=1704808655&width=800",
-
-      "https://cdn.shopify.com/s/files/1/0791/2083/files/Image_06_45431b07-ea66-45cc-bff4-513cdb8f5238.jpg?v=1704808655&width=800",
     ],
 
     rating: 5,
