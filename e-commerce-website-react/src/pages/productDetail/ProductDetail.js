@@ -5,8 +5,8 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart";
 import Footer from "../../components/footer/Footer";
 import StarRating from "./StarRating";
-
 import { Spinner, Container, Row, Col, Button } from "reactstrap";
+
 
 function ProductDetail() {
   const [loading, setLoading] = useState(true);
@@ -37,9 +37,11 @@ function ProductDetail() {
   const handleImgChange = (item) => {
     setProductImg(item);
   };
+  
   const CalculateTotal = () => {
     return product.price * quantity;
   };
+
   return (
     <div>
       <Container fluid className="bg-detail-pg text-white p-0">

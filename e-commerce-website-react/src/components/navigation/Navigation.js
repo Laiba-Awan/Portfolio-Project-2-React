@@ -26,7 +26,7 @@ function Navigation({size}) {
               className="navbar-brand ms-4 ms-lg-0 ms-md-0 text-center pb-lg-2"
               to="/"
             >
-              Elegence
+              Elegance
             </Link>
           </div>
           <button
@@ -58,7 +58,8 @@ function Navigation({size}) {
                 </Link>
               </li>
               <li Class="nav-item">
-                <Link Class="nav-link mx-lg-2 nav-line pt-1" to="/aboutus">About Us</Link>
+                <Link Class="nav-link mx-lg-2 nav-line pt-1" to="/aboutus
+                ">About Us</Link>
               </li>
               <li Class="nav-item">
                 <Link
