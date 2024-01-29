@@ -12,3 +12,16 @@ cursor: pointer;
 .card-settings:hover {
   box-shadow: 0px 0px 20px 0px #FB914B;
 }
+.heading-reviews{
+  font-size: 3rem;
+}
+@media (max-width: 576px) {
+  .heading-reviews{
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .heading-reviews{
+    font-size: 2rem;
+  }
+}

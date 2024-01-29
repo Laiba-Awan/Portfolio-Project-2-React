@@ -15,7 +15,7 @@ function Reviews() {
   return (
     <div className="bg-reviews text-center text-white pt-5 pb-5">
       <h5>2,157 have said how good Elegence</h5>
-      <h4 className="mb-4">Our happy clients say about us</h4>
+      <h4 className="mb-4 heading-reviews">Our happy clients say about us</h4>
       <Container>
         <Row className="d-flex justify-content-center">
           {ReviewsData.map((item, index) => (
