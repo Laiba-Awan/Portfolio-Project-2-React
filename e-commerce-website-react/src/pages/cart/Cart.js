@@ -6,6 +6,7 @@ import "../cart/cart.css";
 import { useState } from "react";
 import { TiDelete } from "react-icons/ti";
 import Footer from "../../components/footer/Footer";
+import { CartValidation } from "../../components/validation/Validation";
 import { toast } from "react-toastify";
 import {
   Container,
@@ -22,10 +23,43 @@ import {
 
 function Cart() {
   const { cart } = useSelector((state) => state);
-  const {LoggedIn} = useSelector((state)=> state.user);
+  const { LoggedIn } = useSelector((state) => state.user);
   const [modalOpen, setModalOpen] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [errors, setErrors] = useState({});
+  const [values, setValues] = useState({
+    address: "",
+    city: "",
+    state: "",
+    zip: "",
+  });
+
+  const handleChange = (e) => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleCheckOut = () => {
+    if (
+      values.address.length > 8 &&
+      values.city.length > 3 &&
+      values.state.length > 3 &&
+      values.zip.length > 5
+    ) {
+      [
+        toast.success("Order Placed!"),
+        toast.success(
+          "Your Order #BT-3487 is in the Process! Thanks for Shopping!"
+        ),
+      ] &&
+        dispatch(emptyCart()) &&
+        setModalOpen(false);
+    } else {
+      setErrors(CartValidation(values));
+    }
+  };
 
   const getTotal = () => {
     let price = 0;
@@ -68,7 +102,10 @@ function Cart() {
                 id="exampleAddress"
                 name="address"
                 placeholder="1234 Main St"
+                value={values.address}
+                onChange={handleChange}
               />
+              {errors.address && <div className="errors-2">{errors.address}</div>}
             </FormGroup>
             <FormGroup>
               <Label for="exampleAddress2" className="text-white">
@@ -87,7 +124,14 @@ function Cart() {
                   <Label for="exampleCity" className="text-white">
                     City
                   </Label>
-                  <Input id="exampleCity" name="city" className="modal-bg" />
+                  <Input
+                    id="exampleCity"
+                    name="city"
+                    className="modal-bg"
+                    value={values.city}
+                    onChange={handleChange}
+                  />
+                  {errors.city && <div className="errors-2">{errors.city}</div>}
                 </FormGroup>
               </Col>
               <Col md={4}>
@@ -95,7 +139,14 @@ function Cart() {
                   <Label for="exampleState" className="text-white">
                     State
                   </Label>
-                  <Input id="exampleState" name="state" className="modal-bg" />
+                  <Input
+                    id="exampleState"
+                    name="state"
+                    className="modal-bg"
+                    value={values.state}
+                    onChange={handleChange}
+                  />
+                  {errors.state && <div className="errors-2">{errors.state}</div>}
                 </FormGroup>
               </Col>
               <Col md={2}>
@@ -103,7 +154,14 @@ function Cart() {
                   <Label for="exampleZip" className="text-white">
                     Zip
                   </Label>
-                  <Input id="exampleZip" name="zip" className="modal-bg" />
+                  <Input
+                    id="exampleZip"
+                    name="zip"
+                    className="modal-bg"
+                    value={values.zip}
+                    onChange={handleChange}
+                  />
+                  {errors.zip && <div className="errors-2">{errors.zip}</div>}
                 </FormGroup>
               </Col>
             </Row>
@@ -113,6 +171,7 @@ function Cart() {
                 name="check"
                 type="checkbox"
                 className="checkbox"
+                // value={input.checkbox} onChange={handleChange}
               />
               <Label check for="exampleCheck" className="text-white">
                 Cash on Delivery
@@ -120,15 +179,7 @@ function Cart() {
             </FormGroup>
           </ModalBody>
           <ModalFooter className="modal-bg">
-            <Button
-              className="btn-modal-2"
-              onClick={() => [
-                toast.success("Order Placed!"),
-                toast.success(
-                  "Your Order #BT-3487 is in the Process! Thanks for Shopping!"
-                ),
-              ]}
-            >
+            <Button className="btn-modal-2" onClick={handleCheckOut}>
               Order Placed!
             </Button>
             <Button className="btn-modal" onClick={() => setModalOpen(false)}>
@@ -142,7 +193,12 @@ function Cart() {
             <Row className="mt-5">
               <Col xs="12" sm="12" lg="8" className="col-br mb-5 mb-lg-0">
                 <Row className="header-cart">
-                  <Col lg="6" xs="6" md="8" className="col-cart-sm mt-3 pb-3 ms-lg-5">
+                  <Col
+                    lg="6"
+                    xs="6"
+                    md="8"
+                    className="col-cart-sm mt-3 pb-3 ms-lg-5"
+                  >
                     <h5 className="heading-t-br">Product</h5>
                   </Col>
                   <Col
@@ -243,10 +299,19 @@ function Cart() {
           </Container>
         ) : (
           <div className="d-flex align-items-center justify-content-center flex-column">
-          <p className="mt-5 pt-5 pb-2 cart-text">You must Login to View Cart!</p>
-          <Button type="button" className="btns-cart-empty mb-5" onClick={()=>{navigate("/login")}}>Login</Button>
+            <p className="mt-5 pt-5 pb-2 cart-text">
+              You must Login to View Cart!
+            </p>
+            <Button
+              type="button"
+              className="btns-cart-empty mb-5"
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              Login
+            </Button>
           </div>
-          
         )}
       </Container>
       <Footer />

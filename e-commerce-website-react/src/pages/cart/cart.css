@@ -59,6 +59,12 @@
 .modal-bg {
   background-color: #312e2e !important;
   box-shadow: none;
+  color: #fff;
+}
+.modal-bg:focus {
+  box-shadow: none;
+  border: 1px solid #fff;
+  color: #fff;
 }
 ::placeholder {
   color: #ffffff9c !important;
@@ -85,6 +91,10 @@
   width: 120px;
   background-color: #312e2e;
   border-radius: 5px;
+}
+.errors-2{
+font-size: 0.9rem;
+color: red;
 }
 @media (max-width: 576px) {
   .heading-t-br {

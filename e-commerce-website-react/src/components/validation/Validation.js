@@ -1,4 +1,3 @@
-
 function Validation(values) {
   let error = {};
 
@@ -31,3 +30,39 @@ function Validation(values) {
 
 export default Validation;
 
+function CartValidation(values) {
+  let error = {};
+  if (!values.address) {
+    error.address = "You must add 1 valid address!";
+  } else if (values.address.length < 12) {
+    error.address = "Address is not Valid!";
+  } else {
+    error.address = "";
+  }
+
+  if (!values.city) {
+    error.city = "Add your city name!";
+  } else if (values.city.length < 3) {
+    error.city = "Enter Valid City name!";
+  } else {
+    error.city = "";
+  }
+
+  if (!values.state) {
+    error.state = "Add your State name!";
+  } else if (values.state.length < 3) {
+    error.state = "Enter Valid State name!";
+  } else {
+    error.state = "";
+  }
+
+  if (!values.zip) {
+    error.zip = "Add your zip Code!";
+  } else if (values.zip.length < 5) {
+    error.zip = "Enter Valid zip Code!";
+  } else {
+    error.zip = "";
+  }
+  return error;
+}
+export { CartValidation };
