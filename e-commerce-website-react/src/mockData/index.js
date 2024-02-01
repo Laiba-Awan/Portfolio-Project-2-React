@@ -17,16 +17,16 @@ export const BestSellProducts = [
     ],
     price: 2500,
     images: [
-      "https://reana.pk/cdn/shop/files/IMG_2125-Recovered_aaddc4db-f917-4d13-94ce-38c241c8757d.jpg?v=1704267597&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-40-Version011.png?v=1695800743",
 
-      "https://reana.pk/cdn/shop/files/glow_serum_6eb7832c-ba20-4bcd-b6ac-db8109df22b7.png?v=1704267591&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/glowserum.png?v=1679311740",
 
-      "https://reana.pk/cdn/shop/files/beamisaalreducedpng_9e646791-ca9a-4cf6-86a9-55736513e21b.png?v=1704267621&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/IMG_2125-Recovered.jpg?v=1695800743",
 
-      "https://reana.pk/cdn/shop/files/Her-40-Version011_82e0871e-1e70-4d1b-a9e7-baad1c996659.png?v=1704267612&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/beamisaalreducedpng.png?v=1695800743&width=1500",
     ],
     imgUrl:
-      "https://reana.pk/cdn/shop/files/Her-40-Version011_82e0871e-1e70-4d1b-a9e7-baad1c996659.png?v=1704267612&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-40-Version011.png?v=1695800743",
 
     rating: 4.5,
   },
@@ -121,7 +121,7 @@ export const BestSellProducts = [
 
     rating: 5,
   },
-  
+
   {
     id: "Pr-5",
     name: "Ordinary Serum",
@@ -170,15 +170,12 @@ export const BestSellProducts = [
     ],
     price: 2500,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/Her-16-Version011.png?v=1699076614&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-16-Version011.png?v=1695800728&width=750",
     images: [
-      "https://reana.pk/cdn/shop/files/Her-16-Version011.png?v=1699076614&width=1946",
-
-      "https://reana.pk/cdn/shop/files/brightserum.png?v=1699076635&width=1946",
-
-      "https://reana.pk/cdn/shop/files/bright-_-correct-serum.jpg?v=1699076626&width=1946",
-
-      "https://reana.pk/cdn/shop/files/HER9058copy1.jpg?v=1699076619&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-16-Version011.png?v=1695800728&width=750",
+      "https://joinherbeauty.com/cdn/shop/products/bright-_-correct-serum.jpg?v=1676633740&width=750",
+      "https://joinherbeauty.com/cdn/shop/products/brightserum.png?v=1679311406&width=750",
+      "https://joinherbeauty.com/cdn/shop/products/HER9058copy1.jpg?v=1695800728&width=1500",
     ],
     rating: 4.5,
   },
@@ -204,11 +201,11 @@ export const BestSellProducts = [
     images: [
       "https://reana.pk/cdn/shop/files/Her-25-Version0111.png?v=1699077311&width=1946",
 
-      "https://reana.pk/cdn/shop/files/pillow-_-plummpy-serum.jpg?v=1699077325&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/pillow-_-plummpy-serum.jpg?v=1676633843&width=750",
 
-      "https://reana.pk/cdn/shop/files/pillowysreum.png?v=1699077334&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/pillowysreum.png?v=1679311760&width=750",
 
-      "https://reana.pk/cdn/shop/files/HER86254x5c1.jpg?v=1699077317&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/HER86254x5c1.jpg?v=1695800762&width=1500",
     ],
 
     rating: 4,
@@ -318,12 +315,8 @@ export const NewArrivals = [
       "This serum is a lightweight gel formulation, ensuring easy absorption without any greasy residue. It comes in a sleek and airtight pump bottle to preserve the potency of the ingredients.",
     Usage:
       "Apply a small amount of the serum to clean, dry skin. Gently massage in upward motions until fully absorbed. For best results, use morning and night as part of your daily skincare routine.",
-      
-    reviews: [
-      { text: "Absolutely Amazing Product", 
-        rating: "4.5" 
-      }
-    ],
+
+    reviews: [{ text: "Absolutely Amazing Product", rating: "4.5" }],
     price: 2500,
     imgUrl:
       "https://reana.pk/cdn/shop/files/Her-19-Version011.png?v=1699073937&width=1946",
@@ -425,7 +418,6 @@ export const NewArrivals = [
       "https://reana.pk/cdn/shop/files/Her-21-Version011.png?v=1699074397&width=1946",
       "https://reana.pk/cdn/shop/files/earthyrose.png?v=1699074403&width=1946",
       "https://reana.pk/cdn/shop/files/earthyrosenew.png?v=1699074151&width=1946",
-
     ],
 
     rating: 5,
