@@ -43,10 +43,10 @@ function Cart() {
   };
   const handleCheckOut = () => {
     if (
-      values.address.length > 8 &&
+      values.address.length > 7 &&
       values.city.length > 3 &&
-      values.state.length > 3 &&
-      values.zip.length > 5
+      values.state.length > 2 &&
+      values.zip.length > 4
     ) {
       [
         toast.success("Order Placed!"),
