@@ -34,7 +34,7 @@ function CartValidation(values) {
   let error = {};
   if (!values.address) {
     error.address = "You must add 1 valid address!";
-  } else if (values.address.length < 12) {
+  } else if (values.address.length < 8) {
     error.address = "Address is not Valid!";
   } else {
     error.address = "";
