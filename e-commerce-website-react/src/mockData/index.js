@@ -139,15 +139,15 @@ export const BestSellProducts = [
     ],
     price: 2500,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/Her-35-Version021.jpg?v=1699075716&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-35-Version021.jpg?v=1695800700&width=1500",
     images: [
-      "https://reana.pk/cdn/shop/files/Her-35-Version021.jpg?v=1699075716&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-35-Version021.jpg?v=1695800700&width=1500",
 
-      "https://reana.pk/cdn/shop/files/OH-SO-CHERRY.jpg?v=1699075727&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/OH-SO-CHERRY.jpg?v=1695800698",
 
-      "https://reana.pk/cdn/shop/files/Her-34-Version011.png?v=1699075735&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/ohsocherry.png?v=1679311334",
 
-      "https://reana.pk/cdn/shop/files/ohsocherry.png?v=1699075739&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-34-Version011.png?v=1696330777",
     ],
 
     rating: 4,
@@ -226,17 +226,17 @@ export const BestSellProducts = [
         rating: "4.5",
       },
     ],
-    price: 2500,
+    price: 2800,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/Her-27-Version011.png?v=1699076210&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/soysmoothienew.png?v=1696331122",
     images: [
-      "https://reana.pk/cdn/shop/files/Her-27-Version011.png?v=1699076210&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/soysmoothienew.png?v=1696331122",
 
-      "https://reana.pk/cdn/shop/files/soysmoothienew.png?v=1699076224&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-27-Version011.png?v=1695800719",
 
-      "https://reana.pk/cdn/shop/files/soysmoothie.png?v=1699076231&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/soysmoothie.png?v=1679311386",
 
-      "https://reana.pk/cdn/shop/files/HER65804x51.jpg?v=1699076215&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/HER65804x51.jpg?v=1696331122&width=1500",
     ],
 
     rating: 3,
@@ -260,17 +260,17 @@ export const NewArrivals = [
         rating: "4.5",
       },
     ],
-    price: 2500,
+    price: 2800,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/goodnightglow2new.png?v=1699075055&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/goodnightglow2new.png?v=1695800677",
     images: [
-      "https://reana.pk/cdn/shop/files/goodnightglow2new.png?v=1699075055&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/goodnightglow2new.png?v=1695800677",
 
-      "https://reana.pk/cdn/shop/files/goodnight-glow.jpg?v=1699075071&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/goodnight-glow.jpg?v=1677045739",
 
-      "https://reana.pk/cdn/shop/files/bluebubles.png?v=1699075086&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/goodnightglownew.png?v=1677045739",
 
-      "https://reana.pk/cdn/shop/files/goodnightglownew.png?v=1699075078&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/bluebubles.png?v=1679311289",
     ],
     rating: 2,
   },
@@ -290,17 +290,17 @@ export const NewArrivals = [
         rating: "4.5",
       },
     ],
-    price: 2500,
+    price: 1900,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/WhatsApp_Image_2023-03-07_at_11.52.13_AM_2_2a89d3a6-1e5c-4baa-8b9c-da1d8400ea07.jpg?v=1704267834&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/balancebestiemew.png?v=1695799369",
     images: [
-      "https://reana.pk/cdn/shop/files/WhatsApp_Image_2023-03-07_at_11.52.13_AM_2_2a89d3a6-1e5c-4baa-8b9c-da1d8400ea07.jpg?v=1704267834&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/balancebestiemew.png?v=1695799369",
 
-      "https://reana.pk/cdn/shop/files/bright-bae_43c48685-2484-4c37-87f6-92d5e0ad1b97.jpg?v=1704267850&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/balancebestie2new.png?v=1675880759",
 
-      "https://reana.pk/cdn/shop/files/WhatsApp_Image_2023-03-07_at_11.52.12_AM_7e5a516e-4038-4526-a551-1fd9ed13e6c1.jpg?v=1704267828&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/balancebestie.png?v=1679311096",
 
-      "https://reana.pk/cdn/shop/files/juicy-mist_3f97fa89-7189-48d0-8716-3492aea8e456.jpg?v=1704267841&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/HER91394x51.jpg?v=1695799369&width=1500",
     ],
 
     rating: 2,
@@ -319,15 +319,15 @@ export const NewArrivals = [
     reviews: [{ text: "Absolutely Amazing Product", rating: "4.5" }],
     price: 2500,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/Her-19-Version011.png?v=1699073937&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/dew-drop.jpg?v=1699334844",
     images: [
-      "https://reana.pk/cdn/shop/files/Her-19-Version011.png?v=1699073937&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/dew-drop.jpg?v=1699334844",
 
-      "https://reana.pk/cdn/shop/files/dew-drop.jpg?v=1699074456&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-19-Version011.png?v=1695799394",
 
-      "https://reana.pk/cdn/shop/files/dewdropsnew.png?v=1699074466&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/dewdropsnew.png?v=1677045639",
 
-      "https://reana.pk/cdn/shop/files/dewdrops.png?v=1699074472&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/dewdrops.png?v=1679311211",
     ],
 
     rating: 4,
@@ -409,15 +409,15 @@ export const NewArrivals = [
         rating: "4.5",
       },
     ],
-    price: 2500,
+    price: 1800,
     imgUrl:
-      "https://reana.pk/cdn/shop/files/EARTHY-ROSE.jpg?v=1699074388&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-49-Version021.jpg?v=1676145487&width=1500",
 
     images: [
-      "https://reana.pk/cdn/shop/files/EARTHY-ROSE.jpg?v=1699074388&width=1946",
-      "https://reana.pk/cdn/shop/files/Her-21-Version011.png?v=1699074397&width=1946",
-      "https://reana.pk/cdn/shop/files/earthyrose.png?v=1699074403&width=1946",
-      "https://reana.pk/cdn/shop/files/earthyrosenew.png?v=1699074151&width=1946",
+      "https://joinherbeauty.com/cdn/shop/products/Her-49-Version021.jpg?v=1676145487&width=1500",
+      "https://joinherbeauty.com/cdn/shop/products/cloud-drop_1.jpg?v=1677045627",
+      "https://joinherbeauty.com/cdn/shop/products/Her-33-Version011.png?v=1677045627",
+      "https://joinherbeauty.com/cdn/shop/products/clouddrop.png?v=1679311191",
     ],
 
     rating: 5,
@@ -438,7 +438,7 @@ export const NewArrivals = [
         rating: "4.5",
       },
     ],
-    price: 2500,
+    price: 1500,
     imgUrl:
       "https://cdn.shopify.com/s/files/1/0791/2083/products/Ma_nyo-Pure-Cleansing-Oil.jpg?v=1650555197&width=800",
     images: [
@@ -469,7 +469,7 @@ export const NewArrivals = [
         rating: "4.5",
       },
     ],
-    price: 2500,
+    price: 2000,
     imgUrl:
       "https://cdn11.bigcommerce.com/s-gud7r2x2lu/images/stencil/1920w/products/1211/6781/OLAY_eContent_SuperSerum_Day_MOI_NoDerm__49545.1698347086.jpg?c=2",
     images: [
